@@ -167,15 +167,13 @@ span.addEventListener('click', event => {
 return article;
   
 }
-console.log(articleMaker(2))
+// console.log(articleMaker(2))
 
-// declaring articles div class
-const articles = document.querySelector('.articles')
 
 //loop over 
 data.forEach(item => {
-  const element = articleMaker(item)
-  articles.appendChild(element)
+  const articles = document.querySelector('.articles')
+  articles.appendChild(articleMaker(item))
 })
 
 
